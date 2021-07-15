@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const { clean } = require("./clean");
+const { clean } = require("./clean.js");
 let stdin = process.openStdin();
 
 let data = "";

@@ -1,4 +1,4 @@
-export const clean = (data) => {
+const clean = (data) => {
   const ans = [["模块", "文件名", "错误类型", "错误位置"].join("\t")]
     .concat(
       data.split("\n").map((i) => {
@@ -16,4 +16,8 @@ export const clean = (data) => {
     .join("\n");
 
   return ans;
+};
+
+module.exports = {
+  clean,
 };
